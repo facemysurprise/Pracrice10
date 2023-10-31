@@ -5,6 +5,7 @@ import 'package:flutter_ais_bottombar/bloc/res_state.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -145,7 +146,16 @@ class WorkPage extends StatelessWidget {
 
 class AccountPage extends StatelessWidget {
   @override
-  Widget build(BuildContext context) => Center(child: Text("Аккаунт"));
+  Widget build(BuildContext context) {
+  return MaterialApp(
+    home: Scaffold(
+    appBar: AppBar(),
+    body: Center(
+      child: Image.asset('assets/frame.png'),
+    ) ,
+    ),
+  );
+  }
 }
 
 class SquaresPage extends StatelessWidget {
